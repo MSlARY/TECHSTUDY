@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Изучение компьютерных технологий</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li class="dropdown"><a href=""><button>Уроки ▾</button></a></li>
+        <li class="dropdown"><a href=""><button>Задания ▾</button></a></li>
+        <li class="dropdown"><a href=""><button>Услуги ▾</button></a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="https://github.com/" title="Github"><span><img src="./githublogo.png"></span></a>
+        <a href="https://www.instagram.com/" title="Instagram"><span><img src="./instlogo.png"></span></a>
+        <a href="https://discord.com/" title="Discord"><span><img src="./dslogo.png"></span></a>
+        <a href="https://youtube.com/" title="Youtube"><span><img src="./youtubelogo.png"></span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>ИЗУЧЕНИЕ КОМПЬЮТЕРНЫХ<br />ТЕХНОЛОГИЙ</h1>
+      <p class="choose-theme">Выберите тему</p>
+      <div class="theme-buttons">
+       <a href="#html-section"><button>HTML</button></a>
+       <a href="#css-section"><button>CSS</button></a>
+      </div>
+    </div>
+  </main>
+  <section id="tasks-section">
+    <div class="wave-top"></div>
+  
+    <div class="tasks-content">
+      <h1>КАРТОЧКИ</h1>
+      <p>Изучи новые темы</p>
+  
+      <div class="task-button">
+        <a href="#cards-section" class="btn lime">КАРТОЧКИ</a>
+      </div>
+    </div>
+  </section>
+  <section id="html-section">
+    <div class="wave-top-dark"></div>
+  
+    <div id="html-content">
+
+  
+      <div class="html-columns">
+        <div class="html-text">
+            <h2>HTML</h2>
+          <p>
+            HTML (HyperText Markup Language) — это язык разметки, с помощью которого создаются веб-страницы.
+            Он описывает структуру содержимого на странице: где будет текст, заголовки, изображения, ссылки и другие элементы.
+            Браузеры читают HTML и отображают его как визуальный веб-сайт.
+          </p>
+        </div>
+  
+        <div class="html-example">
+          <h3>HTML Пример:</h3>
+          <pre><code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt;HTML Tutorial&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;This is a heading&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+          </code></pre>
+          <a href="#" class="btn lime">КАРТОЧКИ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="css-section">
+    <div class="wave-top-grey"></div> 
+    <div class="css-container">
+      
+      <div class="css-left">
+        <h2>CSS</h2>
+        <p>
+          CSS (Cascading Style Sheets) — это язык таблиц стилей, который используется для оформления веб-страниц. 
+          С его помощью задаются цвета, шрифты, отступы, расположение элементов и другие визуальные параметры. 
+          Если HTML отвечает за структуру страницы, то CSS — за её внешний вид.
+        </p>
+      </div>
+  
+      <div class="css-right">
+        <h3>CSS Пример:</h3>
+        <pre><code>
+  body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+  }
+        </code></pre>
+        <button>КАРТОЧКИ</button>
+      </div>
+  
+    </div>
+  </section>
+  <section id="cards-section">
+    <div class="card-container">
+      <div class="card" id="card">
+        <div class="card-face front" id="front">Loading...</div>
+        <div class="card-face back" id="back">Loading...</div>
+      </div>
+      <div class="card-counter" id="cardCounter">1 из 13</div>
+    </div>
+  
+    <div class="controls">
+      <button id="prevBtn">Назад</button>
+      <button id="nextBtn">Вперёд</button>
+    </div>
+  
+    <script>
+      const cards = [
+        { front: "Что такое HTML?", back: "Язык разметки для создания структуры веб-страниц." },
+        { front: "Что делает тег <a>?", back: "Создаёт гиперссылку." },
+        { front: "Какой селектор задаёт цвет текста?", back: "color: red;" },
+        { front: "Как объявить переменную в JS?", back: "let, const или var" },
+        { front: "Что делает JSON.stringify()?", back: "Преобразует объект в строку JSON." },
+        { front: "Чем отличается <div> от <span>?", back: "<div> — блочный элемент, <span> — строчный." },
+        { front: "Как вставить изображение на страницу?", back: "С помощью тега <img> с src и alt." },
+        { front: "Что такое семантические теги?", back: "Теги, описывающие смысл: <header>, <footer>, <article>." },
+        { front: "Какой атрибут у формы указывает адрес отправки данных?", back: "action." },
+        { front: "Чем отличается id от class?", back: "id — уникальный, class — можно повторять." },
+        { front: "Как подключить CSS к HTML?", back: "С помощью <link> в <head>." },
+        { front: "За что отвечает свойство color?", back: "Цвет текста." },
+        { front: "Как задать фон элементу?", back: "background-color или background-image." }
+      ];
+  
+      let currentIndex = 0;
+      const card = document.getElementById("card");
+      const front = document.getElementById("front");
+      const back = document.getElementById("back");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const cardCounter = document.getElementById("cardCounter");
+  
+      function updateCard() {
+        front.textContent = cards[currentIndex].front;
+        back.textContent = cards[currentIndex].back;
+        card.classList.remove("flipped");
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === cards.length - 1;
+        cardCounter.textContent = `${currentIndex + 1} из ${cards.length}`;
+      }
+  
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+  
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCard();
+        }
+      });
+  
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < cards.length - 1) {
+          currentIndex++;
+          updateCard();
+        }
+      });
+  
+      updateCard();
+    </script>
+  </section>
+  
+  
+  
+</body>
+</html>
